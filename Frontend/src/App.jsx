@@ -5,7 +5,8 @@ import SignUpPage from "./pages/SignUpPage";
 import ExplorePage from "./pages/ExplorePage";
 import LikesPage from "./pages/LikesPage";
 import Sidebar from "./components/Sidebar";
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
   
 
@@ -20,6 +21,20 @@ function App() {
             <Route path="/explore" element={<ExplorePage />} />
             <Route path="/likes" element={<LikesPage />} />
         </Routes>
+        <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+        progressClassName="toastProgress"
+        bodyClassName="toastBody"
+      />
         
       </div>
       
