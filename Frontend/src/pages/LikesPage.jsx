@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaHeart } from "react-icons/fa";
 import {toast} from "react-toastify";
-// import { formatDate } from "../utils/functions";
+import { formatDate } from "../utils/functions";
 
 const LikesPage = () => {
 	const [likes, setLikes] = useState([]);
@@ -55,7 +55,7 @@ const LikesPage = () => {
 									<div className='text-base font-semibold'>{user.username}</div>
 								</div>
 							</th>
-							{/* <td className='px-6 py-4'>{formatDate(user.likedDate)}</td> */}
+							<td className='px-6 py-4'>{formatDate(user.likedDate)}</td>
 							<td className='px-6 py-4'>
 								<div className='flex items-center'>
 									<FaHeart size={22} className='text-red-500 mx-2' />
