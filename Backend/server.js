@@ -21,7 +21,7 @@ app.use(session({ secret: "keyboard cat", resave: false, saveUninitialized: fals
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.use(cors());
+// app.use(cors());
 
 
 app.use("/api/auth", authRoutes);
